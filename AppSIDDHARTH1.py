@@ -1,7 +1,7 @@
 from langchain import HuggingFaceHub
 from fpdf import FPDF
-from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain
+from langchain import PromptTemplate
+from langchain import LLMChain
 from dotenv import load_dotenv
 import os
 import streamlit as st
