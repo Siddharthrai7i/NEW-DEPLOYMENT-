@@ -1,5 +1,4 @@
 from langchain import HuggingFaceHub
-from langchain_community.llms import HuggingFaceHub
 from fpdf import FPDF
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
