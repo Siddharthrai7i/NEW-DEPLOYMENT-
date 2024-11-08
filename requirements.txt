@@ -1,7 +1,5 @@
 langchain
 fpdf
-langchain.prompts
-langchain.chains
 dotenv 
 os
 streamlit
