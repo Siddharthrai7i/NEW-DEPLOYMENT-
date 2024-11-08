@@ -1,0 +1,9 @@
+langchain
+angchain_community.llms
+fpdf
+langchain.prompts
+langchain.chains
+dotenv 
+os
+streamlit
+io
