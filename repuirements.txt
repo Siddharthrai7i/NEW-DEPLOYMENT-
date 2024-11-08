@@ -1,5 +1,5 @@
 langchain
-angchain_community.llms
+langchain_community.llms
 fpdf
 langchain.prompts
 langchain.chains
