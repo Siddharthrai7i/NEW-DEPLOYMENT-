@@ -49,7 +49,7 @@ def create_pdf(summary):
 
 # Prediction function
 def predict(text):
-    llm =HuggingFaceHub(repo_id="utrobinmv/t5_summary_en_ru_zh_base_2048", model_kwargs={"temperature":1,"max_length":200}  )
+    llm =HuggingFaceHub(repo_id="utrobinmv/t5_summary_en_ru_zh_base_2048", model_kwargs={"temperature":0,"max_length":64}  )
     prompt = PromptTemplate(input_variables=['text'], template='Summarize the following text in English: {text}')
     chain = LLMChain(llm=llm, prompt=prompt)
     summary = chain.run(text)
