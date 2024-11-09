@@ -1,4 +1,6 @@
 from langchain import HuggingFaceHub
+
+# from langchain_community.llms import HuggingFaceHub
 from fpdf import FPDF
 from langchain import PromptTemplate
 from langchain import LLMChain
