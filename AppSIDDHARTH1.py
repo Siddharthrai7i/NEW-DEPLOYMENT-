@@ -44,10 +44,13 @@ def create_pdf(summary):
     cleaned_summary = clean_text(summary)
     pdf.multi_cell(0, 10, cleaned_summary)
     # Save PDF to a BytesIO stream
-    pdf_buffer = BytesIO()
-    pdf.output(pdf_buffer, "F")
-    pdf_buffer.seek(0)
-    return pdf_buffer
+    # pdf_buffer = BytesIO()
+    # pdf.output(pdf_buffer, "F")
+    # pdf_buffer.seek(0)
+    # return pdf_buffer
+    # pdf_data = pdf.output(dest="S"))
+    # return pdf_data
+    return bytes(pdf.output(dest="S"))
 
 # Prediction function
 def predict(text):
